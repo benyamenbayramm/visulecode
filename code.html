@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Shiyar - Editor </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        nav img{
+    max-width: 64px;
+    max-height: 64px;
+    object-fit: scale-down;
+    border-radius: 50%;
+}
+
+main{
+    text-align: center;
+}
+#codes{
+    width: 90%;
+    font-size: 25px;
+    min-height: 280px;
+    border-radius: 16px;
+    border: 2px solid rgb(131, 131, 131);
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+#buttons button{
+    width: 30%; 
+    border-radius: 12px;
+    border: 0px;
+    padding: 10px;
+}
+#remove{
+    background-color: rgb(121, 9, 9);
+    color: rgb(10, 10, 9);
+    opacity:.8;
+    transition: width 1s;
+} 
+
+#remove:hover{
+    opacity: 1;
+    color: blanchedalmond;
+    width :35%;
+    font-size:20px ;
+
+}
+#play{
+    background-color: rgb(41, 148, 59);
+    color: white;
+    opacity: .8;
+    transition: width 2s;
+
+
+}
+#play:hover{
+    opacity: 1;
+    width: 35%;
+    font-size:20px ;
+
+
+}
+
+#title-result{
+    padding: 10px;
+    border-bottom: 2px solid rgb(131, 131, 131);
+    margin: 8px 0px;
+    font-weight: bold;
+}
+#result{
+    max-width: 90%;
+
+}
+
+    </style>
+</head>
+<body>
+    <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+    <h1 class="navbar-brand">
+studio code    </h1>
+
+<img src="logo.jpg" />
+
+  </nav>
+
+  <main>
+    <textarea id="codes">
+     <html> 
+         <head></head>
+         <body></body>
+     </html>
+    </textarea>
+    
+    <div id="buttons">
+        <button id="remove"> حذف الأكواد</button>
+        <button id="play"> تشغيل الأكواد </button>
+    </div>
+    <div>
+        <p id="title-result">Result - النتيجة</p>
+    </div>
+    
+  </main>
+
+<div id="result"></div>
+
+ 
+<script src="codee.js"></script>    
+</body>
+</html>
